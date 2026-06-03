@@ -142,3 +142,72 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.participants-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.participant-item {
+  background: linear-gradient(180deg, #ffffff 0%, #f1f8ff 100%);
+  border: 1px solid #dbe9ff;
+  color: #0b63d6;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-size: 13px;
+  box-shadow: 0 1px 0 rgba(11,99,214,0.06);
+}
+
+.participant-empty {
+  color: #666;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.participant-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-email {
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: bold;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.12s ease;
+}
+
+.participant-delete:hover {
+  background: rgba(198,40,40,0.08);
+}
